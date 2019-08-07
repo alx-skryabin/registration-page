@@ -14,6 +14,8 @@
 	background: #fff;
 	transition: left 0.5s ease-in-out;
 	box-shadow: 0 0 10px 10px rgba(0,0,0,0.05);
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 .reg_content {
 	height: 100%;
@@ -21,18 +23,20 @@
 	flex-direction: column;
 }
 .content_btn-back button {
+	display: none;
 	outline: none;
 	text-transform: uppercase;
-	font-size: .8em;
+	font-size: .75em;
 	border: none;
+	background: #fff;
 	border-radius: 5px;
 	padding: 5px 10px;
-	margin: 15px 0 0 15px;
+	margin: 15px 0 10px 15px;
 	color: #777;
 	transition: .3s;
 }
 .content_btn-back button:hover {
-	background: #dedede;
+	background: #eee;
 	transition: .3s;
 }
 .content_body-block {
@@ -70,6 +74,7 @@
 	margin-bottom: 30px;
 }
 .body-block_form label {
+	cursor: pointer;
 	width: 100%;
 	margin-bottom: 15px;
 }
@@ -99,9 +104,55 @@
 	background: #1387C5;
 	transition: .3s;
 }
+.tips-reg {
+	color: tomato;
+	opacity: 0;
+	margin: 10px;
+	width: 70%;
+	background: #FFF3CD;
+	border: 1px solid #FFEEBA;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: .8em;
+}
 .content_slide-status {
 	text-align: center;
 	font-size: 0.8em;
 	margin: 15px;
 	color: #ccc;
+}
+.body-block_form-2 .col-6 {
+	padding: 5px;
+}
+.body-block_form-2 .row {
+	margin-bottom: 10px;
+}
+.body-block_form-2 input {
+	display: none;
+}
+.body-block_form-2 label {
+	padding: 10px;
+	margin-bottom: 0px;
+	border: 2px solid #eee;
+	border-radius: 5px;
+	display: inline-block;
+	text-align: center;
+}
+.body-block_form-2 label:hover {
+	border: 2px solid #47AFFF !important;
+}
+.body-block_form-2 img {
+	width: 70%;
+}
+.body-block_form-2 label div {
+	font-size: .9em;
+	font-weight: bold;
+	color: #1387C5;
+}
+.btn-reg-step-2 {
+	opacity: 0;
+}
+/*временно пока мессенджер недоступен*/
+.temp-type-desabled {
+	opacity: .5;
 }

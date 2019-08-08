@@ -126,7 +126,7 @@ function selectTypeRadio() {
 
 	for(let i = 0; i < radio.length; i++) {
 		radio[i].addEventListener('click', function(e) {
-			$('.btn-reg-step-2').css('opacity','1');
+			$('.btn-reg-step-2').slideDown(300);
 			for (let j = 0; j < radio.length; j++) {
 				tipsReg.css({'opacity' : '0'}); /*временно пока мессенджер недоступен*/
 				radio[j].parentElement.style.border = '2px solid #eee';

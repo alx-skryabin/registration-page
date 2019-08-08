@@ -1,3 +1,15 @@
+/* Scrollbar Opera, Chrome */
+::-webkit-scrollbar-track {
+	background-color: $fff; 
+} 
+::-webkit-scrollbar-thumb { 
+	border-radius: 5px; 
+	background-color: #ccc; 
+} 
+::-webkit-scrollbar{ 
+	width: 6px; 
+}
+
 .wrap-reg {
 	height: 100vh;
 	position: relative;
@@ -5,6 +17,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center right;
+	transition: .5s ease-in;
 }
 .block-reg {
 	position: absolute;
@@ -16,11 +29,26 @@
 	box-shadow: 0 0 10px 10px rgba(0,0,0,0.05);
 	overflow-y: auto;
 	overflow-x: hidden;
+	scrollbar-color: #ccc #fff;
+	scrollbar-width: thin;
+}
+@media screen and (min-width: 600px) and (max-width: 991px){
+	.block-reg {
+		width: 60%;
+		left: 20% !important;
+	}
+}
+@media screen and (max-width: 599px) {
+	.block-reg {
+		width: 100%;
+		left: 0 !important;
+	}
 }
 .reg_content {
-	height: 100%;
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 .content_btn-back button {
 	display: none;
@@ -31,7 +59,7 @@
 	background: #fff;
 	border-radius: 5px;
 	padding: 5px 10px;
-	margin: 15px 0 10px 15px;
+	margin: 15px 0 0 15px;
 	color: #777;
 	transition: .3s;
 }
@@ -47,6 +75,7 @@
 	height: 100%;
 }
 .body-block_logo {
+	margin-top: 15px;
 	margin-bottom: 30px;
 }
 .body-block_logo img {
@@ -114,6 +143,7 @@
 	border-radius: 5px;
 	padding: 5px 10px;
 	font-size: .8em;
+	transition: .5s;
 }
 .content_slide-status {
 	text-align: center;
@@ -150,7 +180,8 @@
 	color: #1387C5;
 }
 .btn-reg-step-2 {
-	opacity: 0;
+	display: none;
+	transition: line;
 }
 /*временно пока мессенджер недоступен*/
 .temp-type-desabled {

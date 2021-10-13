@@ -1,189 +1,220 @@
 /* Scrollbar Opera, Chrome */
 ::-webkit-scrollbar-track {
-	background-color: $fff; 
-} 
-::-webkit-scrollbar-thumb { 
-	border-radius: 5px; 
-	background-color: #ccc; 
-} 
-::-webkit-scrollbar{ 
-	width: 6px; 
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ccc;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
 }
 
 .wrap-reg {
-	height: 100vh;
-	position: relative;
-	background-image: url(img/reg-slide-one.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center right;
-	transition: .5s ease-in;
+  height: 100vh;
+  position: relative;
+  background-image: url(img/reg-slide-one.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  transition: .5s ease-in;
 }
+
 .block-reg {
-	position: absolute;
-	left: 0;
-	width: 33%;
-	height: 100vh;
-	background: #fff;
-	transition: left 0.5s ease-in-out;
-	box-shadow: 0 0 10px 10px rgba(0,0,0,0.05);
-	overflow-y: auto;
-	overflow-x: hidden;
-	scrollbar-color: #ccc #fff;
-	scrollbar-width: thin;
+  position: absolute;
+  left: 0;
+  width: 33%;
+  height: 100vh;
+  background: #fff;
+  transition: left 0.5s ease-in-out;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-color: #ccc #fff;
+  scrollbar-width: thin;
 }
-@media screen and (min-width: 600px) and (max-width: 991px){
-	.block-reg {
-		width: 60%;
-		left: 20% !important;
-	}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .block-reg {
+    width: 60%;
+    left: 20% !important;
+  }
 }
+
 @media screen and (max-width: 599px) {
-	.block-reg {
-		width: 100%;
-		left: 0 !important;
-	}
+  .block-reg {
+    width: 100%;
+    left: 0 !important;
+  }
 }
+
 .reg_content {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .content_btn-back button {
-	display: none;
-	outline: none;
-	text-transform: uppercase;
-	font-size: .75em;
-	border: none;
-	background: #fff;
-	border-radius: 5px;
-	padding: 5px 10px;
-	margin: 15px 0 0 15px;
-	color: #777;
-	transition: .3s;
+  display: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: .75em;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 15px 0 0 15px;
+  color: #777;
+  transition: .3s;
 }
+
 .content_btn-back button:hover {
-	background: #eee;
-	transition: .3s;
+  background: #eee;
+  transition: .3s;
 }
+
 .content_body-block {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
+
 .body-block_logo {
-	margin-top: 15px;
-	margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
+
 .body-block_logo img {
-	width: 40px;
+  width: 40px;
 }
+
 .body-block_logo span {
-	position: relative;
-	top: 4px;
-	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: #1387C5;
+  position: relative;
+  top: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #1387C5;
 }
+
 .body-block_form-2,
 .body-block_form-3 {
-	display: none;
+  display: none;
 }
+
 .body-block_form {
-	width: 70%;
+  width: 70%;
 }
+
 .form-1_desc {
-	color: #1387C5;
-	line-height: 1.2;
-	font-style: italic;
-	margin-bottom: 30px;
+  color: #1387C5;
+  line-height: 1.2;
+  font-style: italic;
+  margin-bottom: 30px;
 }
+
 .body-block_form label {
-	cursor: pointer;
-	width: 100%;
-	margin-bottom: 15px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 15px;
 }
+
 .body-block_form label p {
-	margin-bottom: 5px;
-	font-weight: bold;
-	font-size: 0.9em;
-	color: #1387C5;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #1387C5;
 }
+
 .body-block_form label input {
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	padding: 8px;
-	width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  width: 100%;
 }
+
 .btn-reg {
-	width: 100%;
-	border-radius: 5px;
-	border: none;
-	padding: 10px;
-	background: #47AFFF;
-	font-size: 0.9em;
-	color: #fff;
-	transition: .3s;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background: #47AFFF;
+  font-size: 0.9em;
+  color: #fff;
+  transition: .3s;
 }
+
 .btn-reg:hover {
-	background: #1387C5;
-	transition: .3s;
+  background: #1387C5;
+  transition: .3s;
 }
+
 .tips-reg {
-	color: tomato;
-	opacity: 0;
-	margin: 10px;
-	width: 70%;
-	background: #FFF3CD;
-	border: 1px solid #FFEEBA;
-	border-radius: 5px;
-	padding: 5px 10px;
-	font-size: .8em;
-	transition: .5s;
+  color: tomato;
+  opacity: 0;
+  margin: 10px;
+  width: 70%;
+  background: #FFF3CD;
+  border: 1px solid #FFEEBA;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: .8em;
+  transition: .5s;
 }
+
 .content_slide-status {
-	text-align: center;
-	font-size: 0.8em;
-	margin: 15px;
-	color: #ccc;
+  text-align: center;
+  font-size: 0.8em;
+  margin: 15px;
+  color: #ccc;
 }
+
 .body-block_form-2 .col-6 {
-	padding: 5px;
+  padding: 5px;
 }
+
 .body-block_form-2 .row {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
+
 .body-block_form-2 input {
-	display: none;
+  display: none;
 }
+
 .body-block_form-2 label {
-	padding: 10px;
-	margin-bottom: 0px;
-	border: 2px solid #eee;
-	border-radius: 5px;
-	display: inline-block;
-	text-align: center;
+  padding: 10px;
+  margin-bottom: 0px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
 }
+
 .body-block_form-2 label:hover {
-	border: 2px solid #47AFFF !important;
+  border: 2px solid #47AFFF !important;
 }
+
 .body-block_form-2 img {
-	width: 70%;
+  width: 70%;
 }
+
 .body-block_form-2 label div {
-	font-size: .9em;
-	font-weight: bold;
-	color: #1387C5;
+  font-size: .9em;
+  font-weight: bold;
+  color: #1387C5;
 }
+
 .btn-reg-step-2 {
-	display: none;
-	transition: line;
+  display: none;
+  transition: line;
 }
+
 /*временно пока мессенджер недоступен*/
 .temp-type-desabled {
-	opacity: .5;
+  opacity: .5;
 }

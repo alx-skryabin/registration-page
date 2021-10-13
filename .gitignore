@@ -1,4 +1,3 @@
 # Specify filepatterns you want git to ignore.
 .sublime
-.sublime/reg.sublime-workspace
-.sublime/reg.sublime-project
+.idea
